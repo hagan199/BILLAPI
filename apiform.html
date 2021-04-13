@@ -1,0 +1,115 @@
+    <form class="form" action="bill.php">
+    <label for="customerName" class="labelActivityName"><b>Customer Name </b></label>
+    <input type="text" id="customerName" placeholder="Customer Name " name="customerName">
+    <BR>
+
+    <label for="customerMobile" class="labelActivityDescription"><b>Customer Mobile</b></label>
+    <textarea id="customerMobile" placeholder="Customer Mobile" name="customerMobile"></textarea>
+    <BR>
+
+    <label for="provider" class="labelActivityDescription"><b>Network Provider</b>
+    <select  id="provider" name="provider">
+    <option value="MTN_MONEY">MTN</option>
+    <option value="VODAFONE_CASH">VODAFONE</option>
+    <option value="AIRTELTIGO_MONEY">AIRTELTIGO</option>
+    <option value="SLYDEPAY">SLYDEPAY</option>
+    <option value="STANBIC_BANK">STANBIC BANK</option>
+    </select>
+    </label>    
+    <BR>
+
+    <button type="submit"><b>Submit</b></button>
+</form>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Registration form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+        border-bottom: 1px solid #eee;
+        border: none;
+        }
+        option {
+        background: black; 
+        border: none;
+        }
+        .checkbox input {
+        margin: 0 10px 0 0;
+        vertical-align: middle;
+        }
+        .checkbox a {
+        color: #26a9e0;
+        }
+        .checkbox a:hover {
+        color: #85d6de;
+        }
+        .btn-item, button {
+        padding: 10px 5px;
+        margin-top: 20px;
+        border-radius: 5px; 
+        border: none;
+        background: #26a9e0; 
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        color: #fff;
+        }
+        .btn-item {
+        display: inline-block;
+        margin: 20px 5px 0;
+        }
+        button {
+        width: 100%;
+        }
+        button:hover, .btn-item:hover {
+        background: #85d6de;
+        }
+        @media (min-width: 568px) {
+        html, body {
+        height: 100%;
+        }
+        .main-block {
+        flex-direction: row;
+        height: calc(100% - 50px);
+        }
+        .left-part, form {
+        flex: 1;
+        height: auto;
+        }
+        }
+    </style>
+    </head>
+    <body>
+    <div class="main-block">
+        <div class="left-part">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>Register User</h1>       
+        </div>
+        <form  action="bill.php">
+        <div class="title">
+        <i class="fas fa-pencil-alt"></i> 
+        <h2>Register here</h2>
+        </div>
+        <div class="info">
+            <input class="customerName" id="customerName" type="text" name="customerName" placeholder="Customer Name">
+            <input type="text" name="customerMobile" id="customerMobile" placeholder="Customer Mobile : 023-345-6378" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <input type="text" name="walletRef" id="walletRef" placeholder="Wallet reference">
+        <select  id="provider" name="provider">
+        <option value="MTN_MONEY">MTN</option>
+        <option value="VODAFONE_CASH">VODAFONE</option>
+        <option value="AIRTELTIGO_MONEY">AIRTELTIGO</option>
+        <option value="SLYDEPAY">SLYDEPAY</option>
+        <option value="STANBIC_BANK">STANBIC BANK</option>
+        </select>
+        </div>
+        <div class="checkbox">
+
+        </div>
+        <button type="submit" href="/">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
